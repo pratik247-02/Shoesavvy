@@ -8,6 +8,7 @@ import authroutes from './routes/authroutes.js';
 import productroutes from './routes/productroutes.js';
 import path from 'path';
 import { fileURLToPath} from 'url';
+import { dirname } from 'path';
 
 
 //config env
