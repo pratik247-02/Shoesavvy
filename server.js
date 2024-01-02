@@ -7,10 +7,15 @@ import categoryroutes from './routes/categoryroutes.js';
 import authroutes from './routes/authroutes.js';
 import productroutes from './routes/productroutes.js';
 import path from 'path';
+import { fileURLToPath} from 'url';
 
 
 //config env
 dotenv.config();
+
+//esmodule fix
+const __filename= fileURLToPath(import.meta.url);
+const __dirnname= path.dirname(__filename)
 
 //db connection
 connectDB();
