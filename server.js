@@ -8,7 +8,6 @@ import authroutes from './routes/authroutes.js';
 import productroutes from './routes/productroutes.js';
 import path from 'path';
 import { fileURLToPath} from 'url';
-import { dirname } from 'path';
 
 
 //config env
@@ -16,7 +15,7 @@ dotenv.config();
 
 //esmodule fix
 const __filename= fileURLToPath(import.meta.url);
-const __dirnname= path.dirname(__filename)
+const __dirname= path.dirname(__filename)
 
 //db connection
 connectDB();
