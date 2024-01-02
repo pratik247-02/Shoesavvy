@@ -6,7 +6,7 @@ import cors from 'cors'
 import categoryroutes from './routes/categoryroutes.js';
 import authroutes from './routes/authroutes.js';
 import productroutes from './routes/productroutes.js';
-import path, { Path } from 'path';
+import { Path } from 'path';
 
 
 //config env
